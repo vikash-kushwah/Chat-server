@@ -1,0 +1,11 @@
+Run Vite with Host Flag:
+
+Instead of editing the config, you can simply start Vite with the --host flag:
+npm run dev -- --host
+This automatically binds Vite to all network interfaces, making your app accessible on other devices.
+and provide the network links
+
+we can also run directly as:
+npm run dev
+But this will require local ipv4 address with port number to access it 
+10.1.0.90:5173

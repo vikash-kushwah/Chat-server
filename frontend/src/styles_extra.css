@@ -1,0 +1,185 @@
+/* frontend/src/styles.css */
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-container input {
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 1rem;
+  width: 100%;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s;
+}
+
+.login-container input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.login-container p {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+/* Chat Header */
+.header {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Chat Messages */
+.messages {
+  list-style: none;
+  padding: 0;
+  height: 85vh;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  width: 90%;
+  max-width: 800px;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  max-width: 80%;
+  word-wrap: break-word;
+  display: flex;
+  align-items: center;
+}
+
+.message.right {
+  justify-content: flex-end;
+  text-align: right;
+  margin-left: auto;
+}
+
+.message.left {
+  justify-content: flex-start;
+  text-align: left;
+  margin-right: auto;
+}
+
+.message .content {
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.message.right .content {
+  background-color: #dcf8c6;
+}
+
+.message.left .content {
+  background-color: #f4f4f4;
+}
+
+/* Chat Input Styles */
+.chat-input {
+  display: flex;
+  margin-top: 10px;
+  width: 90%;
+  max-width: 800px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.chat-input button {
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 20px;
+  }
+
+  .login-container h2 {
+    font-size: 1.25rem;
+  }
+
+  .login-container button {
+    padding: 10px;
+  }
+
+  .header {
+    font-size: 20px;
+  }
+
+  .messages {
+    height: 250px;
+    width: 100%;
+  }
+
+  .chat-input {
+    width: 100%;
+  }
+}
