@@ -1,0 +1,27 @@
+/* src/styles/responsive.css */
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 20px;
+    
+  }
+  .login-container h2 {
+    font-size: 1.25rem;
+  }
+  .login-container button {
+    padding: 10px;
+  }
+  .header {
+    font-size: 20px;
+  }
+  .messages {
+    height: 250px;
+    width: 100%;
+  }
+  .chat-input {
+    width: 100%;
+  }
+  .chat-window {
+    height: 80vh;
+  }
+}
